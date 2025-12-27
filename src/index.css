@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Angolan flag colors - red, black, yellow */
+    --background: 0 0% 98%;
+    --foreground: 0 0% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
+
+    /* Primary - Angolan red */
+    --primary: 0 85% 45%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 0 85% 40%;
+
+    /* Secondary - Angolan yellow/gold */
+    --secondary: 45 100% 50%;
+    --secondary-foreground: 0 0% 10%;
+
+    --muted: 0 0% 95%;
+    --muted-foreground: 0 0% 40%;
+
+    /* Accent - Angolan black with red tint */
+    --accent: 0 5% 15%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 0 85% 45%;
+
+    --radius: 0.75rem;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(0 85% 45%), hsl(0 85% 35%));
+    --gradient-hero: linear-gradient(135deg, hsl(0 85% 45%) 0%, hsl(0 5% 15%) 100%);
+    
+    /* Shadows */
+    --shadow-card: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-hover: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+
+  .dark {
+    --background: 0 5% 8%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 5% 12%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 5% 12%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 85% 50%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 0 85% 45%;
+
+    --secondary: 45 100% 55%;
+    --secondary-foreground: 0 0% 10%;
+
+    --muted: 0 5% 18%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 0 5% 20%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 5% 20%;
+    --input: 0 5% 20%;
+    --ring: 0 85% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
