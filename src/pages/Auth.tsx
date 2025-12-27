@@ -76,7 +76,7 @@ export default function Auth() {
         <form onSubmit={handleAuth} className="space-y-4">
           {!isLogin && (
             <div>
-              <Label htmlFor="fullName">Nome Completo</Label>
+              <Label htmlFor="fullName">Nome Completo do usuario</Label>
               <Input
                 id="fullName"
                 type="text"
