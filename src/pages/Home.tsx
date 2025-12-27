@@ -49,7 +49,7 @@ export default function Home() {
             Desporto Angola
           </h1>
           <p className="text-xl md:text-2xl mb-8 opacity-90">
-            Todas as notícias sobre o desporto angolano
+            Todas as notícias sobre o desportosssss angolanossssssss
           </p>
           <div className="flex justify-center gap-4 flex-wrap">
             {categories.map((cat) => (
